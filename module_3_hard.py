@@ -18,11 +18,11 @@ def calculate_structure_sum(*object):
     for i in object:
         if isinstance(i, int):
             counter += i
-        if isinstance(i, str) and len(i) >= 1:
+        elif isinstance(i, str) and len(i) >= 1:
             counter += len(i)
-        if isinstance(i, (list, tuple, set)):
+        elif isinstance(i, (list, tuple, set)):
             counter += calculate_structure_sum(*i)
-        if isinstance(i, dict):
+        elif isinstance(i, dict):
             counter += calculate_structure_sum(*i.keys())
             counter += calculate_structure_sum(*i.values())
     return counter
