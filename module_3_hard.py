@@ -28,6 +28,6 @@ def calculate_structure_sum(*object):
     return counter
 
 
-result = calculate_structure_sum(data_structure)
+result = calculate_structure_sum(*data_structure)
 
 print(result)
