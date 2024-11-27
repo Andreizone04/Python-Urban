@@ -1,7 +1,7 @@
 import os
 import time
 
-for root, dirs, files in os.walk(r'C:\Users\Andre\PycharmProjects\Python7'):
+for root, dirs, files in os.walk(os.getcwd()):
     for file in files:
 
         filepath = os.path.abspath(file)
