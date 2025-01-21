@@ -14,7 +14,7 @@ async def urban_message(message):
 @dp.message_handler(commands=['start'])
 async def start_message(message):
     print('Привет! Я бот помогающий твоему здоровью.')
-    await message.answer('Urban message!')
+    await message.answer('Привет! Я бот помогающий твоему здоровью.')
 
 @dp.message_handler()
 async def all_message(message):
